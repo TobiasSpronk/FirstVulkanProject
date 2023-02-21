@@ -21,7 +21,7 @@ void VulkanRenderer::createInstance()
 {
 
 	// Information about the application itself
-	// Most data here doesnt affect the programm and is for developer convenience
+	// Most data here doesn't affect the program and is for developer convenience
 	VkApplicationInfo appinfo = {};
 	appinfo.sType = VK_STRUCTURE_TYPE_APPLICATION_INFO;
 	appinfo.pApplicationName = "Vulkan App";					// Custom name of the application
@@ -77,4 +77,5 @@ bool VulkanRenderer::checkInstanceExtensionSupport(std::vector<const char*>* che
 	std::vector<VkExtensionProperties> extensions(extensionCount);
 	vkEnumerateInstanceExtensionProperties(nullptr, &extensionCount, extensions.data());
 
+	//check if given extension
 }
